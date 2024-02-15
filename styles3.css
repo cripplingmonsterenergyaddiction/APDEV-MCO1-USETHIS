@@ -52,7 +52,7 @@
   }
   
   /* Form field styling */
-  input[type=text], textarea, input[type=file] {
+  input[type=text], textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -60,6 +60,10 @@
     border: 1px solid #ffa800; /* Changed border color */
     border-radius: 4px;
     box-sizing: border-box;
+  }
+  
+  input[type=file] {
+    border: none; /* Removed border */
   }
   
   input[type=submit] {
@@ -80,5 +84,10 @@
   /* Font styling */
   body, input, textarea, button {
     font-family: 'Outfit', sans-serif;
+  }
+  
+  /* Image styling */
+  #profilePic {
+    border-radius: 50%; /* Made the image round */
   }
   

@@ -251,3 +251,37 @@ hr {
   display: flex;
   justify-content: flex-end;
 }
+.main-list {
+  flex: 1 0 auto; /* This will push the footer to the bottom */
+}
+
+.footer {
+  background-color: #ffa800;
+  color: #fff;
+  flex-shrink: 0;
+  text-align: center;
+  padding: 10px;
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  
+}
+#star-rating button {
+  border: 1px solid #ffa800;
+  border-radius: 5px;
+  color: #ffa800;
+  background-color: transparent;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+#star-rating button:hover {
+  background-color: #ffa800;
+  color: white;
+}
+#star-rating {
+  margin-left: 20px; /* Adjust this value as needed */
+}

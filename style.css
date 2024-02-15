@@ -2,6 +2,10 @@ body {
     margin: 0;
     padding: 0;
     overflow-y: scroll; /* Allow vertical scrolling */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  
   }
   #eggy-logo {
     width: 12%;
@@ -219,14 +223,21 @@ body {
     margin-right: 15px;
     margin-top: -3%;
   }
+  .main-list {
+    flex: 1 0 auto; /* This will push the footer to the bottom */
+  }
   .footer {
     background-color: #ffa800;
     color: #fff;
-  
+    flex-shrink: 0;
     text-align: center;
     padding: 10px;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
     
   }
+  
   #footer-text {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -251,5 +262,25 @@ body {
   #search-form {
     display: flex;
     justify-content: flex-end;
+  }
+  
+  #star-rating button {
+    border: 1px solid #ffa800;
+    border-radius: 5px;
+    color: #ffa800;
+    background-color: transparent;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  #star-rating button:hover {
+    background-color: #ffa800;
+    color: white;
+  }
+  #star-rating {
+    margin-left: 20px; /* Adjust this value as needed */
   }
   
